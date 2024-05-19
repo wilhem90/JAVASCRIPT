@@ -36,6 +36,9 @@ function ContaPoupanca(agencia, conta, saldo) {
 ContaCorrente.prototype = Object.create(Conta.prototype)
 ContaCorrente.prototype.constructor = ContaCorrente
 
+ContaPoupanca.prototype = Object.create(Conta.prototype)
+ContaPoupanca.prototype.constructor = ContaPoupanca
+
 ContaCorrente.prototype.sacar = function(valor) {
     if (valor > this.saldo) {
         console.log("Saldo insuficiente para esse valor!2");
@@ -54,5 +57,5 @@ Corrente.sacar(1)
 
 const Poupanca = new ContaPoupanca(52, 5635, 100)
 Poupanca.depositar(10)
-Poupanca.sacar(10)
+Poupanca.sacar(110)
 Poupanca.sacar(1)
