@@ -19,7 +19,7 @@ const p2 = new Pessoa('Rubens Wundt', 'Maxime')
 const p3 = new Pessoa('Jonas', 'Pierre')
 const p4 = new Pessoa('Widelande', 'Francois')
 
-console.log(p1.quemFala());
-console.log(p2.quemFala());
-console.log(p3.quemFala());
-console.log(p4.quemFala());
+p1.quemFala();
+p2.quemFala();
+p3.quemFala();
+p4.quemFala();
